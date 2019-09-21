@@ -1,14 +1,22 @@
 {% extends 'base.html' %}
 {% block menu %}
-   <li><a href="{% url 'note_add' %}">Add Note</a></li>
+    <li><a href="{% url 'note_add' %}">Add Note</a></li>
+
 {% endblock %}
 {% block content %}
    <h1>Гостевая книга</h1>
    <hr/>
    {% for note in notes %}
-       <h2>{{ note.name }} ({{ note.mail }}) <a href={% url 'note_update' note.pk %}><img src="http://s1.iconbird.com/ico/2013/8/429/w512h5121377938429185042editmodifystreamline.png" style="height: 20px; margin-left: 30px"></a>
-           <a href=#><img src="https://api.icons8.com/download/2831e1dc118290aec39e73675d0191c599988586/windows10/PNG/512/Editing/delete-512.png" style="height: 25px; margin-left: 5px"></a></h2>
-       <div>{{ note.text }}</div>
+       <div class="card">
+          <div class="card-header">
+                  <h3>{{ note.name }} ({{ note.mail }}) <a href={% url 'note_update' note.pk %}><img src="http://s1.iconbird.com/ico/2013/8/429/w512h5121377938429185042editmodifystreamline.png" style="height: 20px; margin-left: 30px"></a>
+                  <a href={% url 'note_delete' note.pk %}><img src="https://api.icons8.com/download/2831e1dc118290aec39e73675d0191c599988586/windows10/PNG/512/Editing/delete-512.png" style="height: 25px; margin-left: 5px"></a></h3>
+          </div>
+
+          <div class="card-body">
+            <p class="card-text">{{ note.text }}</p>
+          </div>
+        </div>
        <hr/>
    {% endfor %}
 {% endblock %}

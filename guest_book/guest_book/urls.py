@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', webapp_views.index_views, name='index'),
     path('notes/add', webapp_views.note_create_view, name='note_add'),
-    path('note/<int:pk>/edit/', webapp_views.note_update_view, name = 'note_update')
+    path('note/<int:pk>/edit/', webapp_views.note_update_view, name = 'note_update'),
+    path('note/<int:pk>/delete/', webapp_views.note_delete, name = 'note_delete')
 ]

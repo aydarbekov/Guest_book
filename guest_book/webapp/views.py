@@ -35,3 +35,11 @@ def note_update_view(request, pk):
             return redirect('index')
         else:
             return render(request, 'update.html', context={'form': form, 'note': note})
+
+def note_delete(request, pk):
+    note = get_object_or_404(Note, pk=pk)
+    if request.method == 'GET':
+        return render(request, 'delete.html', context={'note': note})
+    elif request.method == 'POST':
+        note.delete()
+        return redirect('index')
