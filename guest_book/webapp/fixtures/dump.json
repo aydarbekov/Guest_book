@@ -1,0 +1,80 @@
+[
+{
+  "model": "webapp.note",
+  "pk": 1,
+  "fields": {
+    "name": "Akyl",
+    "mail": "akyl.aydarbekov@gmail.com",
+    "text": "qweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqwewefasdfasdfasdfsadfasdfasdfasdfadsfasdfasdfasdfa",
+    "created_at": "2019-09-21T06:16:28.642Z",
+    "updated_at": "2019-09-21T06:16:28.642Z",
+    "category": "active"
+  }
+},
+{
+  "model": "webapp.note",
+  "pk": 2,
+  "fields": {
+    "name": "Tima",
+    "mail": "Tima@gmail.com",
+    "text": "aqdfqfqwefqwefqwefqwefqwefweffwew",
+    "created_at": "2019-09-21T06:16:56.578Z",
+    "updated_at": "2019-09-21T06:16:56.578Z",
+    "category": "active"
+  }
+},
+{
+  "model": "webapp.note",
+  "pk": 3,
+  "fields": {
+    "name": "John Doe",
+    "mail": "john_doe@example.com",
+    "text": "Lorem kadf;lafj;afjk;afjsdapfoiqjprvoijrpvirpvijwor jre vijopr vjporj rj porjopwrj oirjopvij pwr",
+    "created_at": "2019-09-21T06:18:41.422Z",
+    "updated_at": "2019-09-21T06:18:41.422Z",
+    "category": "blocked"
+  }
+},
+{
+  "model": "webapp.note",
+  "pk": 4,
+  "fields": {
+    "name": "Vasilii Pupkin",
+    "mail": "vasya@example.com",
+    "text": "qweqweqweqwdasdasdfasdfasdfadsfadsfadfasdfasdfasdfasdfadsfadsfasdfadfasdfdasf",
+    "created_at": "2019-09-21T06:19:31.000Z",
+    "updated_at": "2019-09-21T06:19:31.000Z",
+    "category": "active"
+  }
+},
+{
+  "model": "webapp.note",
+  "pk": 5,
+  "fields": {
+    "name": "Asyl",
+    "mail": "asyl@exaple.com",
+    "text": "qwdqwdqwdqdwefwefrferferfer erfer f erf er fr ref erf er ref",
+    "created_at": "2019-09-21T06:20:20.560Z",
+    "updated_at": "2019-09-21T06:20:20.560Z",
+    "category": "blocked"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$dSBOyIk79ctx$y1IqRxyjmaN8elCdR1MoICuaC0bGuM/T1Y6TduOGKo8=",
+    "last_login": "2019-09-21T06:15:58.654Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-09-21T06:13:38.270Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
