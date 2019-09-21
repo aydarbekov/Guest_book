@@ -11,7 +11,7 @@ class Note(models.Model):
     text = models.TextField(max_length=2000, verbose_name='Текст')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Время создания')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Время создания')
-    category = models.CharField(max_length=20, verbose_name='Категория',
+    status = models.CharField(max_length=20, verbose_name='Статус',
                                 choices=NOTE_CATEGORY_CHOICES, default=NOTE_CATEGORY_CHOICES[0][0])
 
     def __str__(self):
