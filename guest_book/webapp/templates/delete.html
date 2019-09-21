@@ -7,7 +7,7 @@
     <h1>Are you sure want to delete note "{{ note }}"?</h1>
     <form method="POST" action="{% url "note_delete" note.pk %}" class="text-center">
         {% csrf_token %}
-        <p><input type="submit" value="Yes"></p>
-        <p><a href="{% url "index" %}">NO</a></p>
+        <p><input type="submit" value="Yes" class="btn btn-secondary"></p>
+        <p><a class="btn btn-secondary" href="{% url "index" %}">NO</a></p>
     </form>
 {% endblock %}

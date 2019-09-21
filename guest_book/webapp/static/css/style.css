@@ -1,7 +1,9 @@
 body {
     margin-top: 60px;
 }
-
+h1{
+    text-align: center;
+}
 .navbar {
     display: block;
     background: #6a7dff;
@@ -44,6 +46,3 @@ body {
     box-shadow: red 0 0 3px;
 }
 
-h1{
-    text-align: center;
-}
